@@ -49,7 +49,7 @@ let app = new Vue({
       this.showResult = false;
     },
     goToAchivments() {
-      if (this.totalGames > 0) {
+      if (this.totalGames != 0) {
         this.showMain = false;
         this.showSocial = false;
         this.showAchivments = true;
@@ -197,7 +197,7 @@ let app = new Vue({
   },
 });
 
-let audio = new Audio('audio/soundtrack.mp3');
+let audio = new Audio('../audio/soundtrack.mp3');
 let audio_btn = document.querySelector('.btn__sound');
 let audio_icon = document.querySelector('.btn__sound i');
 
